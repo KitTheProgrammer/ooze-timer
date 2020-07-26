@@ -1,0 +1,428 @@
+@font-face {
+    font-family: MDT;
+    src: url('fonts/MDT55.otf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: MDT;
+    src: url('fonts/MDT75.otf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: MDT;
+    src: url('fonts/MDT85.otf');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: Cristal;
+    src: url('fonts/3555.ttf');
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #000b00;
+    height: 100%;
+    font-family: 'MDT', Mediator, sans-serif;
+}
+
+.green {
+    color: #00aa1b;
+}
+
+.normal {
+    font-weight: 400;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.bolder {
+    font-weight: 900;
+}
+
+.white {
+    color: white;
+}
+
+.black {
+    color: black;
+}
+
+.small {
+    font-size: 2vh;
+}
+
+.medium {
+    font-size: 3vh;
+}
+
+.big {
+    font-size: 4vh;
+}
+
+.very-big {
+    font-size: 6vh;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.main .first-image-container {
+    height: 100%;
+    background-image: url(./assets/FullBg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.main .timer {
+    display: flex;
+    font-family: 'Cristal', Arial, sans-serif;
+    color: aliceblue;
+    font-size: min(8em, 17vh);
+    letter-spacing: 0.1em;
+}
+
+.main .buttons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main .buttons .interact-buttons-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+    /*border: 1px solid white;*/
+}
+
+.main .buttons .interact-buttons-container .page-name {
+    margin-left: 3%;
+}
+
+.main .buttons .interact-buttons-container .interact-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 15%;
+    height: 50%;
+    /*border: 1px solid red;*/
+    margin-right: 3%;
+}
+
+.main .buttons .interact-buttons-container .interact-buttons .music-wrapper {
+    width: 20%;
+    height: 70%;
+}
+
+.main .buttons .interact-buttons-container .interact-buttons .music-wrapper .music {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.main .buttons .links-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 8%;
+    margin-bottom: 7vh;
+}
+
+.main .buttons .links-container .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    height: 100%;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: min(2em, 4vh);
+}
+
+.main .buttons .links-container .link {
+    height: 55%;
+    width: 4%;
+    position: absolute;
+    align-self: center;
+}
+
+.main .buttons .links-container .link a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.main .buttons .links-container .link object {
+    height: 100%;
+    width: 100%;
+}
+
+.main .buttons .links-container .youtube {
+    left: 80%;
+}
+
+.main .buttons .links-container .instagram {
+    left: 85%;
+}
+
+.main .buttons .links-container .facebook {
+    left: 90%;
+}
+
+.main .buttons .links-container .listen-button {
+    background-color: #fff;
+    border: 4px solid #fff;
+    margin-right: 2%;
+}
+
+.main .buttons .links-container .contacts-button {
+    background: none;
+    border: 4px solid #00aa1b;
+    margin-left: 2%;
+}
+
+.main .stuff {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/StuffBg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /*border: 1px solid blue;*/
+}
+
+.main .stuff .information {
+    margin-top: 3%;
+    margin-left: 5%;
+    display: grid;
+    width: 90%;
+    height: 87%;
+    /*border: 1px solid white;*/
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1.5fr 2.5fr 1fr 1fr;
+}
+
+.main .stuff .information .inf-it {
+    /*border: 1px solid red;*/
+}
+
+.main .stuff .information .header {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.main .stuff .information .image {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.main .stuff .information .image-wrapper {
+    height: 60vh;
+    margin-left: 10%;
+    margin-top: -10%;
+}
+
+.main .stuff .information .text-2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.main .stuff .information .text-2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.main .stuff .information .text-3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.main .stuff .contacts {
+    display: grid;
+    margin-top: 3%;
+    margin-left: 5%;
+    width: 90%;
+    height: 87%;
+    /*border: 1px solid white;*/
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 2fr 2fr 1fr 1fr;
+}
+
+.main .stuff .contacts .cont-it {
+    /*border: 1px solid red;*/
+}
+
+.main .stuff .contacts .header {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .stuff .contacts .header .logo {
+    width: 30%;
+    margin-top: -13%;
+}
+
+.main .stuff .contacts .image {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.main .stuff .contacts .image .img-text {
+    margin-left: 10%;
+    margin-top: 5%;
+    width: min(calc(305px * 1288 / 872), calc(45vh * 1288 / 872));
+}
+
+.main .stuff .contacts .image .image-wrapper {
+    height: 45vh;
+    margin-left: 10%;
+    max-height: 305px;
+}
+
+.main .stuff .contacts .text-2 {
+    position: relative;
+}
+
+.main .stuff .contacts .text-2 .links-container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+}
+
+.main .stuff .contacts .text-2 .links-container .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 70%;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: min(2em, 4vh);
+    background: none;
+    border: 4px solid #00aa1b;
+}
+
+.main .stuff .contacts .text-2 .links-container .w-margin {
+    margin-left: 2%;
+}
+
+.main .stuff .contacts .links {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .stuff .contacts .links .link {
+    height: 30%;
+    width: 8%;
+    position: absolute;
+    align-self: center;
+}
+
+.main .stuff .contacts .links .link a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.main .stuff .contacts .links .link object {
+    height: 100%;
+    width: 100%;
+}
+
+.main .stuff .contacts .links .youtube {
+    left: 32%;
+}
+
+.main .stuff .contacts .links .facebook {
+    left: 58%;
+}
+
+.main .stuff .listen {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+/*.main .stuff .listen {*/
+/*    align-self: center;*/
+/*    margin-top: 5%;*/
+/*    width: 70%;*/
+/*    height: 80%;*/
+/*    border: 1px solid white;*/
+/*    display: grid;*/
+/*    grid-template-rows: 2fr repeat(5, 1fr);*/
+/*}*/
+
+/*.main .stuff .listen .listen-it {*/
+/*    border: 1px solid red;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    align-content: center;*/
+/*    justify-content: center;*/
+/*}*/
