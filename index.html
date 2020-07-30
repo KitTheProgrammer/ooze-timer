@@ -5,7 +5,7 @@
     <title>OOZE</title>
     <link type="text/css" rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="toggleMusic()">
     <div class="main">
         <div class="first-image-container">
             <div id="timer" class="timer">
@@ -22,9 +22,9 @@
 
                     </div>
                     <div class="music-wrapper" onclick="toggleMusic()">
-                        <object class="music" type="image/svg+xml" data="assets/Music.svg">
+                        <object id="music-obj" class="music" type="image/svg+xml" data="assets/music_off.svg">
                         </object>
-                        <audio id="music" loop autoplay>
+                        <audio id="music" loop>
                             <source src="media/Trapdoor.mp3" type="audio/mp3">
                             <source src="media/Trapdoor.wav" type="audio/wav">
                         </audio>
@@ -48,7 +48,7 @@
                 </div>
             </div>
         </div>
-        <div class="stuff white">
+        <div class="stuff white release">
             <div class="information">
                 <div class="inf-it header">
                     <span class="white bold big">
@@ -87,14 +87,14 @@
                 </div>
             </div>
         </div>
-        <div class="stuff">
+        <div class="stuff stuff-listen">
             <a name="listen"></a>
             <div class="listen">
                 <span class="white bold very-big">Ссылки на прослушивание появятся.</span><br>
                 <span class="green big">(В полночь 7 августа)</span>
             </div>
         </div>
-        <div class="stuff">
+        <div class="stuff stuff-contacts">
             <div class="contacts">
                 <div class="cont-it header">
                     <div class="white bold big">
@@ -170,10 +170,11 @@
 
       function toggleMusic() {
         const player = document.getElementById('music')
-        console.log(player.paused)
+        const icon = document.getElementById('music-obj')
         if (player.paused) {
-          player.play()
+          player.play().then(() => icon.data = 'assets/music_on.svg').catch(() => {})
         } else {
+          icon.data = 'assets/music_off.svg'
           player.pause()
         }
       }

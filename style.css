@@ -221,11 +221,22 @@ body::-webkit-scrollbar {
     flex-direction: column;
     width: 100%;
     height: 100%;
-    background-image: url(./assets/StuffBg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     /*border: 1px solid blue;*/
+}
+
+.main .release {
+    background-image: url(./assets/Release_BG.png);
+}
+
+.main .stuff-listen {
+    background-image: url(./assets/Listen_BG.png);
+}
+
+.main .stuff-contacts {
+    background-image: url(./assets/about_BG.png);
 }
 
 .main .stuff .information {
