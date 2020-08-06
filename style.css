@@ -31,6 +31,7 @@ body {
     background-color: #000b00;
     height: 100%;
     font-family: 'MDT', Mediator, sans-serif;
+    cursor: default;
 }
 
 .green {
@@ -73,6 +74,14 @@ body {
     font-size: 6vh;
 }
 
+.w-margin {
+    margin-left: 2%;
+}
+
+.w-more-margin {
+    margin-left: 20%;
+}
+
 .main {
     height: 100%;
     width: 100%;
@@ -85,7 +94,7 @@ body::-webkit-scrollbar {
 
 .main .first-image-container {
     height: 100%;
-    background-image: url(./assets/FullBg.png);
+    background-image: url(./assets/MainBG_RU.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -96,7 +105,7 @@ body::-webkit-scrollbar {
 
 .main .timer {
     display: flex;
-    font-family: 'Cristal', Arial, sans-serif;
+    font-family: Cristal, Arial, sans-serif;
     color: aliceblue;
     font-size: min(8em, 17vh);
     letter-spacing: 0.1em;
@@ -140,6 +149,7 @@ body::-webkit-scrollbar {
 .main .buttons .interact-buttons-container .interact-buttons .music-wrapper {
     width: 20%;
     height: 70%;
+    cursor: pointer;
 }
 
 .main .buttons .interact-buttons-container .interact-buttons .music-wrapper .music {
@@ -370,10 +380,6 @@ body::-webkit-scrollbar {
     border: 4px solid #00aa1b;
 }
 
-.main .stuff .contacts .text-2 .links-container .w-margin {
-    margin-left: 2%;
-}
-
 .main .stuff .contacts .links {
     position: relative;
     display: flex;
@@ -417,7 +423,8 @@ body::-webkit-scrollbar {
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    height: 100%;
+    height: 80%;
+    margin-top: 3%;
 }
 
 /*.main .stuff .listen {*/
@@ -430,10 +437,60 @@ body::-webkit-scrollbar {
 /*    grid-template-rows: 2fr repeat(5, 1fr);*/
 /*}*/
 
-/*.main .stuff .listen .listen-it {*/
-/*    border: 1px solid red;*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    align-content: center;*/
-/*    justify-content: center;*/
-/*}*/
+.main .stuff .listen .listen-it {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    margin-top: 1%;
+    width: 50%
+}
+
+.main .stuff .listen .listen-it .name-wrapper {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    width: 50%;
+}
+
+.main .stuff .listen .listen-it .listen-stuff-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 100%;
+    border-radius: 36px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: min(2em, 4vh);
+    background-color: #00a91c;
+}
+
+.main .stuff .listen .listen-it .listen-svg {
+    width: 15%;
+}
+
+.main .buttons .interact-buttons-container .interact-buttons .language-wrapper {
+    position: relative;
+}
+
+.main .buttons .interact-buttons-container .interact-buttons .language-wrapper .visible {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    background-color: #000a05;
+    width: 100%;
+}
+
+.main .buttons .interact-buttons-container .interact-buttons .language-wrapper .language-select {
+    display: none;
+}
+
+.main .buttons .interact-buttons-container .interact-buttons .language-wrapper .lang-it {
+    cursor: pointer;
+}
+
+.main .buttons .interact-buttons-container .interact-buttons .language-wrapper .lang-it:hover {
+    background-color: #797979;
+}
