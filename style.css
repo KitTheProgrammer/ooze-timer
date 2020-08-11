@@ -460,7 +460,7 @@ body::-webkit-scrollbar {
     justify-content: center;
     width: 30%;
     height: 100%;
-    border-radius: 36px;
+    border-radius: 15px;
     text-decoration: none;
     font-weight: 700;
     font-size: min(2em, 4vh);
